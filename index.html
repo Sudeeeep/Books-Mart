@@ -18,7 +18,6 @@
 
     <hr>
 
-
     <div class="new-book-container">
         <h3>ADD BOOKS TO YOUR COLLECTION</h3>
         <button class="new-book-btn">NEW BOOK</button>
@@ -26,36 +25,29 @@
 
     <div class="pop-up">
         <button class="close-btn">x</button>
-        <form action="">
+        <div class="empty-fields">Kindly enter all required fields</div>
+        <form action="#">
             <div class="form-desc">
-                <label for="title">Title:</label>
+                <label for="title">Title:*</label>
                 <input type="text" id="title" required>
             </div>
             <div class="form-desc">
-                <label for="author">Author:</label>
+                <label for="author">Author:*</label>
                 <input type="text" id="author" required>
             </div>
             <div class="form-desc">
-                <label for="pages">No. Of Pages:</label>
+                <label for="pages">No. Of Pages:*</label>
                 <input type="number" name="pages" id="pages" required>
             </div>
-
-            <div class="form-desc">
-                <label for="read">Have you read this book?</label>
-                <div class="radio-btn">
-                    <input type="radio" name="read" id="yes" required> <label for="yes">YES</label>
-                    <input type="radio" name="read" id="no" required> <label for="no">NO</label>
-                </div>
-
+            <div>
+                <input type="checkbox" name="read" id="read">
+                <label for="read">I have already read this book</label>
             </div>
             <input type="submit" value="ADD BOOK" class="add-book-btn">
         </form>
-
-
     </div>
 
-    <div class="grid-container">
-
+    <div class="grid-container"></div>
     </div>
 
 </body>
